@@ -1,0 +1,130 @@
+:root {
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --off-white: hsl(36, 100%, 99%);
+  --soft-red: hsl(5, 85%, 63%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4.5%;
+}
+
+.navbar-logo img {
+  width: 4.5rem;
+  cursor: pointer;
+}
+
+.navbar-close {
+  opacity: 0;
+  position: absolute;
+}
+
+.navbar-close.active {
+  opacity: 1;
+}
+
+.navbar-burger {
+  opacity: 1;
+}
+
+.navbar-burger.active {
+  opacity: 0;
+}
+
+.navbar-burger,
+.navbar-close {
+  transition: 0.2s;
+}
+
+.navbar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.navbar-navigation {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.26);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 0%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.navbar-navigation.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar-list {
+  background-color: var(--off-white);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 0%;
+  padding: 40% 0 0 7%;
+  transition: 0.2s;
+}
+
+.navbar-list.active {
+  width: 70%;
+}
+
+.navbar-item {
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  color: var(--soft-red);
+}
+
+.navbar-item:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+@media (min-width: 700px) {
+  .navbar-btn {
+    display: none;
+  }
+
+  .navbar-navigation {
+    /* reset values */
+    position: relative;
+    background-color: transparent;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    z-index: auto;
+    width: auto;
+    opacity: 1;
+    transition: none;
+  }
+
+  .navbar-list {
+    /* reset values */
+    background-color: var(--off-white);
+    position: relative;
+    right: auto;
+    height: auto;
+    width: auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+}
