@@ -1,0 +1,41 @@
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+.homepage {
+  max-width: 65rem;
+  padding: 0 1.8rem;
+  margin: 0 auto;
+}
+
+.homepage-new {
+  background-color: var(--very-dark-blue);
+  padding: 3rem 2.2rem 1rem 2.2rem;
+}
+
+.homepage-new-heading {
+  color: var(--soft-orange);
+  font-size: 4rem;
+}
+
+@media (min-width: 1100px) {
+  .homepage {
+    max-width: 120rem;
+    padding: 4rem 2rem;
+  }
+
+  .homepage-main {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .homepage-new {
+    flex: 1;
+  }
+}
