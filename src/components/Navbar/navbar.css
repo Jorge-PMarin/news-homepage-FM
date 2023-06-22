@@ -1,6 +1,7 @@
 :root {
   --very-dark-blue: hsl(240, 100%, 5%);
   --off-white: hsl(36, 100%, 99%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
   --soft-red: hsl(5, 85%, 63%);
 }
 
@@ -82,7 +83,7 @@
 
 .navbar-item {
   font-size: 1.8rem;
-  color: var(--very-dark-blue);
+  color: var(--dark-grayish-blue);
   cursor: pointer;
 }
 

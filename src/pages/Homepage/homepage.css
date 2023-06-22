@@ -1,9 +1,5 @@
 :root {
   --soft-orange: hsl(35, 77%, 62%);
-  --soft-red: hsl(5, 85%, 63%);
-  --off-white: hsl(36, 100%, 99%);
-  --grayish-blue: hsl(233, 8%, 79%);
-  --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
 }
 
@@ -23,6 +19,10 @@
   font-size: 4rem;
 }
 
+.homepage-bottom {
+  margin: 7rem 0rem;
+}
+
 @media (min-width: 1100px) {
   .homepage {
     max-width: 120rem;
@@ -30,12 +30,20 @@
   }
 
   .homepage-main {
+    margin-top: 2rem;
+  }
+
+  .homepage-top {
     display: flex;
     gap: 3rem;
-    margin-top: 2rem;
   }
 
   .homepage-new {
     flex: 1;
+  }
+
+  .homepage-bottom {
+    display: flex;
+    gap: 3.5rem;
   }
 }

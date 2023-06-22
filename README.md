@@ -11,7 +11,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop-design](./my-design/my-design-desktop.png)
+![mobile-design](./my-design/my-design-mobile.png)
 
 ### Links
 
@@ -25,4 +26,3 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-# news-homepage-FM
