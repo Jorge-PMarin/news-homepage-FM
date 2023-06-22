@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Jorge-PMarin/news-homepage-FM
+- Live Site URL: https://jorge-pmarin.github.io/news-homepage-FM/
 
 ### Built with
 
